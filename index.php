@@ -1,37 +1,38 @@
+foreach
+
+
 <?php
-# ex1
-for ($i = 1; $i <= 10; $i++) {
-    echo $i . "<br>";
+#ex1
+$fruits = ["pomme", "banane", "orange", "fraise", "kiwi"];
+
+foreach ($fruits as $fruit) {
+    echo $fruit . "<br>";
 }
 
-#---------------------------------------------------------------------------------------------------------------------
+#----------------------------------------------------------------------------------------------------------------
 
-# ex 2
+#ex2
+$personne = [
+    "nom" => "Dupont",
+    "prenom" => "Jean",
+    "age" => 30,
+    "ville" => "Paris"
+];
 
-$sum = 0;
-
-for ($i = 1; $i <= 100; $i++) {
-    $sum += $i;
+foreach ($personne as $cle => $valeur) {
+    echo ucfirst($cle) . " : " . $valeur . "<br>";
 }
 
-echo "La somme des nombres de 1 à 100 est : " . $sum;
-
-#---------------------------------------------------------------------------------------------------------------------
+#----------------------------------------------------------------------------------------------------------------
 
 #ex 3
+$etudiants = [
+    ["nom" => "Martin", "note" => 15],
+    ["nom" => "Durand", "note" => 12],
+    ["nom" => "Petit", "note" => 18]
+];
 
-$nombre = 7;
-
-for ($i = 1; $i <= 10; $i++) {
-    echo "$nombre x $i = " . ($nombre * $i) . "<br>";
+foreach ($etudiants as $etudiant) {
+    echo "Nom : " . $etudiant["nom"] . " - Note : " . $etudiant["note"] . "<br>";
 }
-
 ?>
-
-
-
-
-
-
-
-
