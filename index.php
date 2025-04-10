@@ -1,7 +1,5 @@
-foreach
-
-
 <?php
+
 #ex1
 $fruits = ["pomme", "banane", "orange", "fraise", "kiwi"];
 
